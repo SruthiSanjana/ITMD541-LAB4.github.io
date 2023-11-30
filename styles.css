@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.app-bar {
+    background-color: #1d3c51;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.app-bar h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/sunrise.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+button, select, input {
+    margin: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#geolocationBtn, #locationSelect {
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#dashboard {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.card{
+    /* Adjust the RGB values and alpha (0.5 for 50% transparency) as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+
+
+#errorContainer {
+    color: rgb(241, 239, 239);
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #dashboard {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Sunrise Sunset Dashboard</title>
+</head>
+<body>
+    <div class="app-bar">
+    <h1>Sunrise Sunset Dashboard 🌅</h1>
+        <div class="location-info" id="locationInfo"></div>
+    </div>
+
+    <div class="container">
+        
+
+        <div class="search-controls">
+            <input type="text" id="locationSearch" placeholder="Search Location">
+            <button id="searchBtn">Search 🔍</button>
+        </div>
+        <div class="location-controls">
+            <button id="geolocationBtn">Find My Location 📍</button>
+
+            <select id="locationSelect">
+                <option value="">Top Locations</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Paris">Paris</option>
+            </select>
+        </div>
+        <div id="dashboard" class="hidden">
+            <!-- Data will be displayed here -->
+        </div>
+
+        <div id="errorContainer" class="hidden">
+            <!-- Error messages will be displayed here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
